@@ -18,3 +18,4 @@ RUN apk del -r python3-dev postgresql
 # Prepare
 COPY . /data/web/
 RUN mkdir -p mydjango/static/admin
+RUN /etc/init.d/apache2 stop
